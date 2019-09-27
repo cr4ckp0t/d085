@@ -6,7 +6,7 @@ driver:
   availability_zone: b
   subnet_id: subnet-0d389e0315ec7f096
   instance_type: t2.micro
-  image_id: ami-07d0cf3af28718ef8
+  image_id: ami-02eac2c0129f6376b
   security_group_ids: ["sg-03a8021d9ee046e9b"]
   retryable_tries: 120
 
@@ -17,14 +17,13 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-18.04
+  - name: centos-7
 
 transport:
   ssh_key: ssh/MyEC2Keypair.pem
-  username: ubuntu
+  username: centos
   connection_timeout: 10
   connection_retries: 5
-
 
 suites:
   - name: core

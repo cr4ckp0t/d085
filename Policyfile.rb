@@ -19,4 +19,3 @@ named_run_list 'web_front', 'd085::web_front'
 
 # Specify a custom source for a single cookbook:
 cookbook 'd085', path: '.'
-cookbook 'nginx', '~> 10.0.1', :supermarket

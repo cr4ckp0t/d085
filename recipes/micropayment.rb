@@ -1,4 +1,3 @@
-nginx_install 'default' do
-	source 'repo'
-	action :install
+['httpd', 'mod_ssl'].each do |pkg|
+	package pkg
 end
