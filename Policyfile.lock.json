@@ -1,23 +1,40 @@
 {
-  "revision_id": "c7c153d199c8ddbdafe178d1da335570053883c06bbea8cab368d2e26fbc494d",
+  "revision_id": "b496c1f268625ecd3ab5d6f2dfe3a27838634b81836135eb9207592096497076",
   "name": "d085",
   "run_list": [
     "recipe[d085::default]"
   ],
+  "named_run_lists": {
+    "core": [
+      "recipe[d085::core]"
+    ],
+    "db": [
+      "recipe[d085::db]"
+    ],
+    "micropayment": [
+      "recipe[d085::db]"
+    ],
+    "web_back": [
+      "recipe[d085::web_back]"
+    ],
+    "web_front": [
+      "recipe[d085::web_front]"
+    ]
+  },
   "included_policy_locks": [
 
   ],
   "cookbook_locks": {
     "d085": {
       "version": "0.1.0",
-      "identifier": "33a86d36c7fdb8179199c3532739b2d8726b90ff",
-      "dotted_decimal_identifier": "14540410836221368.6634014057375545.196642702332159",
+      "identifier": "a1ab8a60f2b3716f19a03039623903c9bfd8a700",
+      "dotted_decimal_identifier": "45506082070770545.31271898209411641.4165041956608",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/cr4ckp0t/d085.git",
-        "revision": "4b1da75b1d94a2d3018842bafde3fb218be4890a",
+        "revision": "2635ef5b314adf3be24eb0d22fcf111db43d38b2",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -27,6 +44,28 @@
       },
       "source_options": {
         "path": "."
+      }
+    },
+    "nginx": {
+      "version": "10.0.1",
+      "identifier": "20c8690486c6cef52d53db8790bfff35db2db6d6",
+      "dotted_decimal_identifier": "9227552627803854.69011207482740927.280606775555798",
+      "cache_key": "nginx-10.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nginx/versions/10.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nginx/versions/10.0.1/download",
+        "version": "10.0.1"
+      }
+    },
+    "ohai": {
+      "version": "5.3.0",
+      "identifier": "3ad58179813321f2497a12ea4e2bbb6018a47ee3",
+      "dotted_decimal_identifier": "16560300715225889.68197733016161835.206021404688099",
+      "cache_key": "ohai-5.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
+        "version": "5.3.0"
       }
     }
   },
@@ -41,10 +80,27 @@
       [
         "d085",
         ">= 0.0.0"
+      ],
+      [
+        "nginx",
+        "= 10.0.1"
+      ],
+      [
+        "ohai",
+        "= 5.3.0"
       ]
     ],
     "dependencies": {
       "d085 (0.1.0)": [
+
+      ],
+      "nginx (10.0.1)": [
+        [
+          "ohai",
+          "~> 5.2"
+        ]
+      ],
+      "ohai (5.3.0)": [
 
       ]
     }

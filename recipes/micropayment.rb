@@ -1,5 +1,4 @@
-["httpd", "mod_ssl"].each do |p|
-	package p do
-		action :install
-	end
+nginx_install 'default' do
+	source 'repo'
+	action :install
 end

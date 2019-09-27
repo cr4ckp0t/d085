@@ -28,30 +28,40 @@ transport:
 
 suites:
   - name: core
+    provisioner:
+      named_run_list: core
     verifier:                      
       inspec_tests:                 
         - test/integration/default   
     attributes:
 
   - name: web_front
+    provisioner:
+      named_run_list: web_front
     verifier:
       inspec_tests:
         - test/integration/default
     attributes:
 
   - name: web_back
+    provisioner:
+      named_run_list: web_back
     verifier:
       inspec_tests:
         - test/integration/default
     attributes:
 
   - name: db
+    provisioner:
+      named_run_list: db
     verifier:
       inspec_tests:
         - test/integration/default
     attributes:
 
   - name: micropayment
+    provisioner:
+      named_run_list: micropayment
     verifier:
       inspec_tests:
         - test/integration/default
