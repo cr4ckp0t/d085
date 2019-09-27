@@ -1,27 +1,28 @@
 {
-  "revision_id": "1813475f95a749fe0ab3286631cfebfac71ac55ff5aaa0568fce4079c38d21ad",
-  "name": "d05_pa",
+  "revision_id": "c7c153d199c8ddbdafe178d1da335570053883c06bbea8cab368d2e26fbc494d",
+  "name": "d085",
   "run_list": [
-    "recipe[d05_pa::default]"
+    "recipe[d085::default]"
   ],
   "included_policy_locks": [
 
   ],
   "cookbook_locks": {
-    "d05_pa": {
+    "d085": {
       "version": "0.1.0",
-      "identifier": "bc2ec939bd96f19d521a3c38a8da903ec8dcae8c",
-      "dotted_decimal_identifier": "52968737413633777.44281843976546522.158599332277900",
+      "identifier": "33a86d36c7fdb8179199c3532739b2d8726b90ff",
+      "dotted_decimal_identifier": "14540410836221368.6634014057375545.196642702332159",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": "5d4f8d03826ae41d66cf943657acadad8dbe1fc0",
+        "remote": "https://github.com/cr4ckp0t/d085.git",
+        "revision": "4b1da75b1d94a2d3018842bafde3fb218be4890a",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/HEAD -> origin/master",
+          "origin/master"
         ]
       },
       "source_options": {
@@ -38,12 +39,12 @@
   "solution_dependencies": {
     "Policyfile": [
       [
-        "d05_pa",
+        "d085",
         ">= 0.0.0"
       ]
     ],
     "dependencies": {
-      "d05_pa (0.1.0)": [
+      "d085 (0.1.0)": [
 
       ]
     }

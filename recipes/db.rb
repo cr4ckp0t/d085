@@ -1,1 +1,1 @@
-package "sqlite" do action :install end
+package "sqlite3"
