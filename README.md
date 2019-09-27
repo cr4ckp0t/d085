@@ -1,4 +1,3 @@
-# d05_pa
+# d085
 
-TODO: Enter the cookbook description here.
-
+* Make sure you run `kitchen destroy` when finished to terminate the EC2 instances.
