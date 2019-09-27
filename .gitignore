@@ -1,2 +1,3 @@
 ssh/*
 .kitchen/*
+./Policyfile.lock.json
