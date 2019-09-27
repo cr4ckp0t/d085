@@ -65,3 +65,27 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+
+  - name: coop_core
+    provisioner:
+      named_run_list: coop_core
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
+
+  - name: coop_gateway
+    provisioner:
+      named_run_list: coop_gateway
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
+
+  - name: coop_env
+    provisioner:
+      named_run_list: coop_env
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:

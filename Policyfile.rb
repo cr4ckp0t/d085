@@ -16,6 +16,9 @@ named_run_list 'db', 'd085::db'
 named_run_list 'micropayment', 'd085::db'
 named_run_list 'web_back', 'd085::web_back'
 named_run_list 'web_front', 'd085::web_front'
+named_run_list 'coop_core', 'd085::coop_core'
+named_run_list 'coop_gateway', 'd085::coop_gateway'
+named_run_list 'coop_env', 'd085::coop_env'
 
 # Specify a custom source for a single cookbook:
 cookbook 'd085', path: '.'
